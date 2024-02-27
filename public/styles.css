@@ -10,6 +10,7 @@ html {
 
 body {
     background: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     padding: 0 16px;
 }
 
@@ -94,8 +95,9 @@ form textarea {
     resize: none;
 }
 
-form button {
+form.create-note button {
     position: absolute;
+    float: right;
     right: 18px;
     bottom: -18px;
     background: #f5ba13;

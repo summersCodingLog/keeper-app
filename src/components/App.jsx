@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from "./Header";
 import Note from "./Note";
 import Footer from "./Footer";
-// import notes from "../notes";
+// import notes from "../notesDB";
 import CreateArea from './CreateArea';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     function deleteNote(id) {
         setNotes(prevNotes => {
             return prevNotes.filter((noteItem, index) => {
-                return index != id;
+                return index !== id;
             });
         });
     }
